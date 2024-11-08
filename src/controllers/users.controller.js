@@ -8,7 +8,3 @@ export const getUsers = async (req, res) => {
     res.status(200).json(data);
   }
 };
-
-export const pingUsers = async (req, res) => {
-  await res.send('pong');
-};

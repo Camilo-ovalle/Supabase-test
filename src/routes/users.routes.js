@@ -1,10 +1,12 @@
 import { Router } from 'express';
 
-import { getUsers, pingUsers } from '../controllers/users.controller.js';
+import { getUsers } from '../controllers/users.controller.js';
+import { createTest } from '../controllers/test.controller.js';
 
 const userRouter = Router();
 
 userRouter.get('/users', getUsers);
-userRouter.post('/ping', pingUsers);
+
+userRouter.get('/test', createTest);
 
 export default userRouter;
